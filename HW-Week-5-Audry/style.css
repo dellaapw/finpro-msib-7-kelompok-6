@@ -1,0 +1,58 @@
+body {
+    background-color: #f8f9fa; /* Warna latar belakang yang bersih dan profesional */
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #4CAF50; /* Hijau gelap untuk memberi kesan ramah dan profesional */
+}
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+.navbar-toggler {
+    border: none;
+}
+.list-group-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #ffffff; /* Warna putih untuk tampilan yang bersih */
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+.list-group-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.progress {
+    height: 8px;
+    margin-top: 10px;
+    background-color: #e9ecef; /* Latar belakang progress bar yang lembut */
+}
+.progress-bar {
+    border-radius: 5px;
+}
+.badge {
+    font-size: 12px;
+    padding: 8px;
+}
+.dropdown-menu {
+    min-width: 220px;
+}
+.dropdown-item img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.container {
+    padding-top: 20px;
+}
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .dropdown-menu {
+        text-align: left;
+    }
+}
