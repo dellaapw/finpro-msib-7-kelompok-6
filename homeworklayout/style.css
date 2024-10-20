@@ -1,0 +1,335 @@
+/* CSS Umum */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS untuk Navigasi */
+.Dashboard {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav {
+    z-index: 100;
+    color: #fff;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* CSS untuk Konten */
+.content {
+    margin-top: 100px; /* Tambah ruang di atas konten untuk menghindari tabrakan dengan navbar */
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.profile-details {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)); /* Gradasi untuk latar belakang */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lembut */
+    max-width: 600px;
+    margin: 20px auto; /* Pertahankan margin otomatis di sisi */
+    text-align: left;
+}
+
+.profile-details p {
+    margin: 10px 0;
+    color: #333; /* Pastikan teks terlihat dengan warna yang jelas */
+}
+
+.profile-details p strong {
+    color: #333; /* Pastikan teks tebal terlihat dengan warna yang jelas */
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; /* Pusatkan teks pada tombol */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS untuk Layar Penuh */
+.layar-penuh {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.layar-penuh video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+header .intro {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header .intro h3 {
+    margin-bottom: 10px;
+    font-size: 24px; 
+}
+
+header .intro p {
+    margin-bottom: 20px;
+}
+
+header .intro .tombol {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .intro .tombol:hover {
+    background-color: #0056b3;
+}
+
+/* CSS untuk Tombol Menu */
+.tombol-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+}
+
+/* CSS untuk Daftar Kursus */
+.kursus-list {
+    display: flex; /* Menggunakan flex untuk tata letak horizontal */
+    flex-wrap: nowrap; /* Tidak membiarkan item melipat ke baris baru */
+    justify-content: flex-start; /* Memulai penataan dari kiri */
+    margin-top: 20px;
+    overflow-x: auto; /* Menambahkan scroll horizontal jika diperlukan */
+}
+
+.course-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px; /* Menambah radius untuk sudut yang lebih halus */
+    padding: 10px; /* Mengurangi padding untuk ukuran lebih kecil */
+    margin: 8px; /* Mengurangi margin antar kartu */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih lembut */
+    width: 150px; /* Lebar tetap untuk kartu */
+    height: 150px; /* Tetapkan tinggi untuk konsistensi */
+    text-align: center; /* Pusatkan teks di dalam kartu */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi transisi */
+}
+
+.course-item:hover {
+    transform: translateY(-5px); /* Mengangkat kartu sedikit saat hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
+}
+
+.course-item h4 {
+    margin: 5px 0; /* Mengurangi margin judul */
+    font-size: 16px; /* Ukuran font untuk judul lebih kecil */
+    color: #333; /* Warna teks untuk judul */
+}
+
+.course-item p {
+    margin: 5px 0 0;
+    color: #555; /* Warna teks untuk progress */
+    font-size: 12px; /* Ukuran font untuk progress lebih kecil */
+}
+
+/* Responsive Styles untuk Kursus */
+@media (max-width: 900px) {
+    .course-item {
+        width: 120px; /* Lebar lebih kecil di layar yang lebih kecil */
+    }
+}
+
+@media (max-width: 600px) {
+    .course-item {
+        width: 90%; /* Lebar penuh di layar yang lebih kecil */
+        max-width: 200px; /* Membatasi lebar maksimum untuk tampilan mobile */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 990px) {
+    nav .menu ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Position below the nav */
+        right: 20px; 
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 200px; /* Set width of the dropdown */
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    nav .menu ul li {
+        line-height: 40px;
+        text-align: center; /* Center text */
+    }
+
+    .tombol-menu {
+        display: flex; /* Show menu button on mobile */
+    }
+
+    .tombol-menu.open + ul {
+        display: flex; /* Show the menu when the button is open */
+    }
+
+    .course-item {
+        width: 90%; /* Lebar kursus lebih kecil di layar mobile */
+    }
+}
+
+@media (min-width: 600px) {
+    .course-item {
+        width: 80%; /* Lebar kursus lebih besar di tablet */
+    }
+}
+
+@media (min-width: 900px) {
+    .course-item {
+        width: 50%; /* Lebar kursus lebih kecil di layar desktop */
+    }
+}
+
+/* CSS untuk Foto Profil */
+.profile-details {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+}
+
+.profile-image {
+    margin-right: 20px; /* Memberikan ruang antara foto dan informasi */
+}
+
+.foto-profil {
+    width: 70px; /* Ukuran kecil untuk foto profil */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 50%; /* Membuat foto profil berbentuk bulat */
+}
+
+/* CSS untuk Daftar Tugas */
+
+.tugas-list {
+    display: grid; /* Menggunakan grid untuk tata letak */
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom dengan ukuran yang sama */
+    gap: 20px; /* Jarak antar item */
+    margin-top: 20px;
+    padding: 20px; /* Tambahkan padding untuk memberi ruang di dalam list */
+    border: 2px solid #007bff; /* Tambahkan border pada list untuk membentuk kotak */
+    border-radius: 10px; /* Radius sudut untuk kehalusan */
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang untuk visibilitas */
+}
+
+.task-item {
+    background: rgba(255, 255, 255, 0.95); /* Latar belakang kotak dengan transparansi lebih rendah untuk kontras yang lebih baik */
+    border-radius: 10px; /* Menambah radius untuk sudut yang lebih halus */
+    padding: 15px; /* Menambah padding untuk memberikan ruang di dalam kotak */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih lembut */
+    border: 1px solid #007bff; /* Tambahkan border untuk memisahkan setiap tugas */
+    height: auto; /* Tinggi otomatis untuk mengakomodasi konten */
+    text-align: center; /* Pusatkan teks di dalam kotak */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi transisi */
+}
+
+.task-item h4 {
+    margin: 5px 0; /* Mengurangi margin judul */
+    font-size: 18px; /* Ukuran font untuk judul */
+    color: #007bff; /* Warna teks untuk judul */
+}
+
+.task-item p {
+    margin: 5px 0; /* Margin untuk paragraf */
+    color: #555; /* Warna teks untuk deskripsi */
+    font-size: 14px; /* Ukuran font untuk deskripsi */
+}
+
+.task-item:hover {
+    transform: translateY(-3px); /* Mengangkat kotak sedikit saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
+}
+
+/* Responsive Styles untuk Tugas */
+@media (max-width: 600px) {
+    .task-item {
+        width: calc(50% - 16px); /* Tetap mempertahankan 2 kolom */
+        max-width: 300px; /* Membatasi lebar maksimum untuk tampilan mobile */
+    }
+}
+
+@media (max-width: 400px) {
+    .task-item {
+        width: calc(100% - 16px); /* Mengubah menjadi 1 kolom untuk layar yang sangat kecil */
+    }
+}
+
+
