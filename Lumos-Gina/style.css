@@ -1,0 +1,132 @@
+.navbar {
+  background-color: #004aad;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 0px; 
+}
+
+.menu_nav {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.navbar-toggler {
+  margin-right: auto;
+}
+
+#fotoprofil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 3rem;
+}
+
+#container_kursus {
+  margin-top: 3rem;
+}
+
+#gambar_kursus {
+  height: 50%;
+  width: auto;
+}
+
+#container_deadline {
+  margin-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.fotoprofil_besar {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+
+/* Responsive styles */
+
+/* Desktop styles (1024px and above) */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet styles (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu_nav {
+    margin-left: 1rem;
+  }
+
+  #fotoprofil {
+    margin-right: 1rem;
+  }
+
+  #container_kursus {
+    margin-top: 2rem;
+  }
+
+  #container_deadline {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .fotoprofil_besar {
+    width: 30%;
+  }
+}
+
+/* Phone styles (320px to 767px) */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu_nav {
+    margin-left: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    margin-right: 0.25rem;
+  }
+
+  #fotoprofil {
+    margin-right: 0.5rem;
+  }
+
+  #container_kursus {
+    margin-top: 1rem;
+  }
+
+  #container_deadline {
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .fotoprofil_besar {
+    width: 50%;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
