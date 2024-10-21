@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-gray-100 font-sans" style="font-family: 'Poppins', sans-serif;">
+
+  <!-- Sidebar -->
+  <div class="flex flex-col md:flex-row min-h-screen">
+    <aside class="bg-purple-600 w-full md:w-64 p-4 text-white flex flex-col">
+      <div class="flex items-center justify-between md:justify-start space-x-2 mb-8">
+        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+          <img src="assets/images/zee-academy.png" alt="icon" class="w-8 h-8">
+        </div>
+        <h1 class="text-xl font-bold">Zee Academy</h1>
+        
+        <!-- Hamburger Button (Mobile) -->
+        <button id="hamburger" class="md:hidden">
+          <i class="ph ph-list text-3xl text-white"></i>
+        </button>
+      </div>
+
+      <!-- Menu navigasi -->
+      <nav id="nav-menu" class="flex-grow hidden md:block transition-all">
+        <ul class="space-y-4">
+          <li><a href="#" class="flex items-center space-x-2 p-2 bg-purple-700 rounded-md"><span class="material-icons"></span>Dashboard</a></li>
+          <li><a href="#" class="flex items-center space-x-2 p-2"><span class="material-icons"></span>Tugas</a></li>
+          <li><a href="#" class="flex items-center space-x-2 p-2"><span class="material-icons"></span>Kursus</a></li>
+          <li><a href="#" class="flex items-center space-x-2 p-2"><span class="material-icons"></span>Penilaian</a></li>
+          <li><a href="#" class="flex items-center space-x-2 p-2"><span class="material-icons"></span>Jadwal</a></li>
+          <li><a href="#" class="flex items-center space-x-2 p-2"><span class="material-icons"></span>Pembayaran</a></li>
+          <li><a href="#" class="flex items-center space-x-2 p-2"><span class="material-icons"></span>Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+        <!-- Header -->
+        <header class="flex justify-between items-center flex-wrap">
+            <div>
+              <h1 class="text-2xl font-bold">Welcome back, Achmad Zainun Qurthubi!</h1>
+              <p class="text-gray-500">Always stay updated in your student portal</p>
+            </div>
+          
+            <div class="flex items-center space-x-4 mt-4 md:mt-0">
+              <div>
+                <input type="text" placeholder="Search" class="p-2 rounded-lg border-gray-300 w-full md:w-auto">
+              </div>
+              <div class="relative">
+                <i class="ph ph-bell text-gray-600 text-xl cursor-pointer"></i>
+                <span class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full px-1">1</span>
+              </div>
+              <div class="relative">
+                <i class="ph ph-user-circle text-gray-600 text-3xl cursor-pointer"></i>
+              </div>
+            </div>
+          </header>
+
+    <!-- Stats Section -->
+    <section class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Tugas Terdekat -->
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+        <h2 class="text-lg font-bold">TUGAS TERDEKAT</h2>
+        <ul class="mt-2">
+            <li class="text-sm"><span class="font-semibold">Homework JavaScript - 14 Okt 2024,  23:59 WIB</span></li>
+        </ul>
+        </div>
+    
+        <!-- Jadwal Terdekat -->
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+        <h2 class="text-lg font-bold">JADWAL TERDEKAT</h2>
+        <ul class="mt-2">
+            <li class="text-sm"><span class="font-semibold">LIVE SESSION JavaScript : 10 Okt 2024, 19:00 WIB</span></li>
+        </ul>
+        </div>
+    </section>
+  
+      <!-- Courses List -->
+      <section class="mt-6">
+        <h2 class="text-xl font-bold">Courses List</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+          <!-- Course 1 -->
+          <div class="bg-purple-100 p-6 rounded-lg shadow-lg flex justify-between items-center">
+            <div>
+              <h3 class="text-lg font-bold">Object Oriented Programming</h3>
+              <p class="text-gray-500">View</p>
+            </div>
+            <span class="material-icons text-purple-600">computer</span>
+          </div>
+
+          <!-- Course 2 -->
+          <div class="bg-purple-100 p-6 rounded-lg shadow-lg flex justify-between items-center">
+            <div>
+              <h3 class="text-lg font-bold">Web Programming</h3>
+              <p class="text-gray-500">View</p>
+            </div>
+            <span class="material-icons text-purple-600">storage</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progress Belajar -->
+    <section class="mt-6">
+        <h2 class="text-xl font-bold">PROGRESS BELAJAR</h2>
+      <div class="bg-white p-4 rounded-lg shadow-lg mt-4">
+        
+        <ul class="mt-2">
+            <li class="text-sm"><span class="font-semibold">Object Oriented Programming</span></li>
+            <div class="relative pt-1">
+              <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-purple-200">
+                <div style="width:75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-600"></div>
+              </div>
+            </div>
+            <li class="text-sm"><span class="font-semibold">Web Programming</span></li>
+            <div class="relative pt-1">
+              <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-purple-200">
+                <div style="width:50%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-600"></div>
+              </div>
+            </div>
+        </ul>
+        </div>
+    </section>
+
+      <!-- Daily Notice -->
+      <section class="mt-6">
+        <h2 class="text-xl font-bold">PENILAIAN TERBARU</h2>
+        <!-- Penilaian Terbaru -->
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+            <ul class="mt-2">
+                <li class="text-sm"><span class="font-semibold">OOP Final Exam - 85/100</span></li>
+            </ul>
+            </div>
+      </section>
+
+      <!-- Status Pembayaran -->
+      <section class="mt-6">
+        <h2 class="text-xl font-bold">Status Pembayaran</h2>
+        <div class="bg-white p-6 rounded-lg shadow-lg mt-4">
+          <p class="text-sm font-bold">Status: <span class="text-red-500">Belum Lunas</span></p>
+          <p class="text-gray-500 mt-2">Tenggat: 20 Okt 2024</p>
+          <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-2">Bayar Sekarang</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- JavaScript untuk Toggle Sidebar Navigation -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
